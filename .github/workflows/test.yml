@@ -25,6 +25,6 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
 
-    - run: npm ci
+    - run: npm ci || npm install
     - run: npm run lint
     - run: npm run build
